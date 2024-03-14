@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Personal Blog</title>
+  <%- include("partials/head.ejs") %>
+</head>
+<body>
+      <%- include("partials/header.ejs") %>
+
+    <div class="container mt-5">
+        <!-- EJS template for dynamic content -->
+        <h1>Personal Blog</h1>
+        <h3 class="h5 mt-4 mb-0">New Post</h3>
+        
+        <form action="/submit" method="POST" class="mt-2">
+          <div class="mb-3">
+            <input type="text" name="title" placeholder="Title" required class="form-control">
+          </div>
+          <div class="mb-3">
+            <textarea name="blogPost" placeholder="Content" rows="10" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Post</button>
+        </form>
+
+  <div class="list-group mt-4">
+      <h3 class="h4">Blog Posts</h3>
+      <% posts.forEach(function(post, index) { %>
+        <div>
+          <a href="/post/<%= index %>"><%= post.title %></a> - <%= post.date %>
+        </div>
+    <% }); %>
+  </div>
+
+</div>
+
+      <%- include("partials/footer.ejs") %>  
+</body>
+</html>

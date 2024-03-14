@@ -1,0 +1,81 @@
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* Custom styles for the navigation bar */
+.nav-pills .nav-link {
+  color: #343a40; /* Bootstrap's dark color */
+  background-color: transparent;
+  border: 0; /* Remove any border */
+  transition: color 0.2s; /* Smooth transition for color change */
+}
+
+.nav-pills .nav-link:hover {
+  color: #6c757d; /* Bootstrap's gray color */
+  background-color: transparent; /* Keep the background transparent */
+}
+
+.nav-pills .nav-link.active, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
+  color: white;
+  background-color: #343a40; /* Bootstrap's dark color */
+  border: 0; /* Remove any border if present */
+}
+
+/* For About page */
+
+li {
+  margin-bottom: 2px !important;
+}
+
+.about-h1 {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-optical-sizing: inherit;
+  font-variation-settings: inherit;
+}
+
+#family-image{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%; /* Ensure it stretches to the width of its container */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0; /* Remove any default margin */
+}
+
+#family-image-section.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+img#family-image.img-fluid {
+  width: 100%; /* This will ensure it's full width of its container */
+  height: auto; /* This will maintain the aspect ratio of the image */
+  display: block; /* Removes any space below the image */
+}
+
+.bi-cup-hot {
+  vertical-align: -0.125em;
+  fill: currentColor; /* Or any specific color you want */
+}
+
+/* If you need to adjust the margin or flex behavior specifically for this icon */
+.bi-cup-hot.text-body-secondary.flex-shrink-0.me-3 {
+  margin-right: 1rem !important; /* Adjust if necessary */
+  flex-shrink: 0 !important;
+}
+
+/* About Page Paragraph Text */
+
+.text-box {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  text-align: left;
+}
