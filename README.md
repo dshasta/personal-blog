@@ -1,17 +1,37 @@
-# personal-blog
-Personal Blog CRUD app made with Express.js and EJS.
+# Personal Blog CRUD App
 
-For my full stack course, instructions were to make a blogging app that could do the following:
+This is a Personal Blog CRUD app made with Express.js and EJS for a full stack course. The application allows users to create, view, update, and delete blog posts. It features a responsive design for a good user experience on both desktop and mobile devices, utilizing Bootstrap for styling with some custom CSS tweaks.
 
-1. Post Creation: Users should be able to create new posts.
-2. Post Viewing: The home page should allow the user to view all their posts.
-3. Post Update/Delete: Users should be [able to] edit and delete posts as needed.
-4. Styling: The application should be well-styled and responsive, ensuring a good user experience on both desktop and mobile devices.
+Key functionalities include:
+- **Post Creation**: Users can create new blog posts.
+- **Post Viewing**: The home page displays all posts for easy access.
+- **Post Update/Delete**: Provides the ability to edit and delete posts.
+- **Styling**: Ensures the application is well-styled and responsive.
+- **Line Break Maintenance**: Custom implementation to maintain line breaks in posts for better readability.
+- **Custom Blog Post Listing**: Enhances user experience by listing posts with only the title and the current date, which links to the full post where it can be edited or deleted.
 
-I used Bootstrap and custom CSS for tweaks. I got very familiar with EJS and how to use it for website scalability.
+*Disclosure*: While the technical requirements and features were outlined, no solution code was provided for this project.
 
-I implemented code to maintain line breaks after publishing and viewing a post (which was not the default behavior).
+## Installation
 
-I implemented custom blog post listing to give the app a cleaner look. After a post is submitted, a text link with only the blog title and current date appears. Link takes the user to the blog post where they can edit or delete.
+To get this project running on your local machine, follow these steps:
 
-Disclosure: While technical requirements and features were given, no solution code was provided.
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/dshasta/personal-blog.git
+    ```
+2. **Navigate into the project directory:**
+    ```bash
+    cd yourprojectname
+    ```
+3. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4. **Start the project:**
+    ```bash
+    npm start
+    ```
+
+After starting the project, you should be able to access it at `http://localhost:3000` (or another specified port) in your web browser.
+
